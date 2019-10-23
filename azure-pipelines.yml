@@ -42,7 +42,7 @@ steps:
     instances: '1'
     memoryLimit: '1GB'
     useRoute: true
-    domain: 'demo.whythink.dev'
+    domain: 'apps.whythink.dev'
     buildPackOptions: 'builtin'
     startOnDeploy: false
     createServices: false
