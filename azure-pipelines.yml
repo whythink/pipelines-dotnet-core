@@ -40,7 +40,7 @@ steps:
     deploymentOptions: 'manual'
     name: 'strDemo'
     instances: '1'
-    memoryLimit: '50'
+    memoryLimit: '1GB'
     useRoute: true
     domain: 'demo.whythink.dev'
     buildPackOptions: 'builtin'
