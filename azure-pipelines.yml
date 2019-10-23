@@ -29,3 +29,18 @@ steps:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
     artifactName: 'myWebsiteName'
 
+- task: CloudFoundry@1
+  inputs:
+    cfEndpoint: 'CloudFoundry'
+    org: 'strTeam'
+    space: 'Demo'
+    deploymentOptions: 'manual'
+    name: 'strDemo'
+    instances: '1'
+    memoryLimit: '50'
+    useRoute: true
+    domain: 'demo.whythink.dev'
+    buildPackOptions: 'builtin'
+    startOnDeploy: false
+    createServices: false
+    bindServices: false
